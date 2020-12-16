@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/listaJugadoresFragment">
+
+    <fragment
+        android:id="@+id/listaJugadoresFragment"
+        android:name="com.example.projecto.ListaJugadoresFragment"
+        android:label="fragment_lista_jugadores"
+        tools:layout="@layout/fragment_lista_jugadores" >
+        <action
+            android:id="@+id/action_listaJugadoresFragment_to_insertarJugadorFragment"
+            app:destination="@id/insertarJugadorFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/insertarJugadorFragment"
+        android:name="com.example.projecto.InsertarJugadorFragment"
+        android:label="fragment_insertar_jugador"
+        tools:layout="@layout/fragment_insertar_jugador" />
+</navigation>
